@@ -1,5 +1,5 @@
 import Profile from './Profile/index';
-import data from '/git/goit-react-hw-01-components/src/user.json';
+import data from '../user.json';
 export const App = () => {
   return (
     <div
