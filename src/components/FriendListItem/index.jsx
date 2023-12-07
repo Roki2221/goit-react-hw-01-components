@@ -1,7 +1,6 @@
 import React from 'react';
 
 function FriendListItem({ data }) {
-  console.log(data);
   return data.map(el => (
     <li className="item" key={el.id}>
       {/* <span className="status">{el.isOnline ? : }</span> */}
