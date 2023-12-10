@@ -2,7 +2,6 @@ import React from 'react';
 import css from './style.module.css';
 
 function FriendListItem({ data }) {
-  console.log(data);
   return data.map(el => (
     <li className={css.item} key={el.id}>
       <span
