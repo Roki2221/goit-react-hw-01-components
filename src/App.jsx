@@ -12,10 +12,11 @@ export const App = () => {
   return (
     <div
       style={{
+        padding: '20px',
+        backgroundColor: '#F4F4F4',
         display: 'flex',
-        // flexDirection: 'column',
-        justifyContent: 'center',
-        color: '#010101',
+        flexWrap: 'wrap',
+        gap: '5px',
       }}
     >
       <Profile
@@ -25,8 +26,12 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics title="Upload stats" stats={data} />
-      <Statistics stats={data} />
+      <Statistics
+        title="Upload stats"
+        stats={data}
+        style={{ flexDirection: 'column' }}
+      />
+      <Statistics style={{ flexDirection: 'column' }} stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
     </div>

@@ -1,13 +1,13 @@
 import React from 'react';
-
+import css from './style.module.css';
 function TransactionHistory({ items }) {
   return (
-    <table className="transaction-history">
+    <table className={css.transaction_history}>
       <thead>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <th>TYPE</th>
+          <th>AMOUNT</th>
+          <th>CURRENCY</th>
         </tr>
       </thead>
 
